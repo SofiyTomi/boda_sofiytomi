@@ -288,3 +288,7 @@ html {
     color: #4a95c4;
     background-color: #aedcf8; /* Color más oscuro para el hover */
 }
+
+.video-container{
+  text-align: center;
+}
