@@ -42,109 +42,42 @@
     </section>
 
     <section class="cancion">
-        <h1>Estás invitado</h1>
+        <h1>Gracias...</h1>
         <div class="container">
-            <p>Queremos que seas parte de este momento tan especial.</p>
-        </div>
-        <div id="contador">
-            <div class="contador-item">
-                <span class="numero" id="dias"></span>
-                <span class="palabra">DÍAS</span>
-            </div>
-            <div class="contador-item">
-                <span class="numero" id="horas"></span>
-                <span class="palabra">HORAS</span>
-            </div>
-            <div class="contador-item">
-                <span class="numero" id="minutos"></span>
-                <span class="palabra">MINUTOS</span>
-            </div>
-            <div class="contador-item">
-                <span class="numero" id="segundos"></span>
-                <span class="palabra">SEGUNDOS</span>
-            </div>
         </div>
     </section>
 
     <section class="fechas">
         <div class="container">
-            <img src="img/anillo-de-bodas.png" alt="" class="img-anillos">
-            <h2>Discurso de Bodas</h2>
-            <p>Salón del Reino de los<br>testigos de Jehová</p>
-            <img src="img/ceremonia.png" alt="" class="img-ceremonia">
-            <p>Magdalena Motti de Tieghi 2245, Longchamps</p>
-            <a href="https://maps.app.goo.gl/9rcWu4vgHThoxHLx6" target="_blank" class="boton-maps">
-                Cómo llegar
-            </a>
-        </div>
-        <div class="container">
-            <img src="img/pastel.png" alt="" class="img-anillos">
-            <h2>Fiesta</h2>
-            <p>Quinta "Los Laureles"</p>
-            <img src="img/fiesta.png" alt="" class="img-ceremonia">
-            <p>Manuel Julián Medel 1386, El Jagüel</p>
-            <a href="https://maps.app.goo.gl/aDtrqNX3ewzgz6az6" target="_blank" class="boton-maps">
-                Cómo llegar
-            </a>
+            <img src="img/smiley.png" alt="" class="img-anillos">
+            <br><br>
+            <p>No tenemos palabras suficientes para agradecerles por haber sido parte de nuestra celebración. <br><br>
+                Su presencia hizo que nuestro día fuera aún más especial y lleno de amor. <br><br>
+
+                Gracias por cada sonrisa, por los abrazos, por los mensajes de cariño y por los hermosos regalos. <br><br>
+                Pero, sobre todo, gracias por compartir con nosotros un momento tan importante en nuestra historia. <br><br>
+                
+                Nos llevamos en el corazón cada instante vivido y cada muestra de afecto. <br><br>
+                ¡Esperamos que hayan disfrutado tanto como nosotros!
+                <br>
+                Con mucho amor,</p>
+                <h1 style="color:#50abbb; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Sofi yTomi</h1>
+    </section>
+
+    <section>
+        <h1>Video entrada</h1>
+        <h2>¡¡Les dejamos algo que <br> muchos nos pidieron!!</h2>
+        <div class="video-container">
+            <iframe 
+                src="https://player.vimeo.com/video/1057475931" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </div>
     </section>
 
-    <section class="dresscode">
-        <div class="container-fluid">
-            <img src="img/smoking.png" alt="" class="img-fluid">
-            <img src="img/vestir.png" alt="" class="img-fluid">
-        </div>
-        <div>
-            <h1>Dresscode</h1>
-            <p>Elegante</p>
-        </div>
-    </section>
-
-    <section class="nosotros">
-        <h1>Nosotros</h1>
-        <div class="container-fluid">
-        <img src="img/3.jpg" alt="" class="img-fluid">
-        <img src="img/2.jpg" alt="" class="img-fluid">
-        <img src="img/1.jpg" alt="" class="img-fluid">
-        <img src="img/4.jpg" alt="" class="img-fluid">
-
-        </div>
-    </section>
-
-    <section class="regalos">
-        <img src="img/caja-de-regalo.png" alt="" class="img-fluid">
-        <h1>Regalos</h1>
-        <p>Para nosotros lo más importante es que nos acompañes, pero si deseas hacernos un regalo, aquí tenés nuestros datos</p>
-        <div class="container-fluid" style="text-align: center; padding-top: 10px; padding-bottom: 50px;">
-            
-            <button id="abrirPopup">Ver datos bancarios</button>
-
-            <!-- Pop-Up -->
-            <div id="miPopup" class="popup">
-                <div class="popup-content">
-                    <span class="cerrar">&times;</span>
-                    <p id="textoACopiar">0000003100086658261864</p>
-                    <button id="copiarTexto">Copiar CVU</button>
-                </div>
-            </div>
-        </section>
-
-    <section class="confirmar">
-        <h1>Confirmar asistencia</h1>
-        <p>Te pedimos por favor que nos confirmes tu asistencia antes del 15 de Enero</p>
-        <div class="container-fluid" style="text-align: center; padding-top: 10px; padding-bottom: 50px;">
-            <a href="https://wa.me/+5491158061580" target="_blank" class="boton-confirmar">Confirmo</a>
-        </div>
-    </section>
-
-
-    <section class="te-esperamos">
-            <h2>¡Te esperamos!</h2>
-            <h2>S&T</h2>
-            <br>
-            <br>
-            <br>
-    </section>
+    <br><br>
 
 
 
@@ -176,33 +109,24 @@
             }
         }, 1000);
     </script>
-    <script>
-        // Obtener elementos
-const abrirPopup = document.getElementById('abrirPopup');
-const miPopup = document.getElementById('miPopup');
-const cerrarPopup = document.querySelector('.cerrar');
-const copiarTextoBtn = document.getElementById('copiarTexto');
-const textoACopiar = document.getElementById('textoACopiar');
-
-// Abrir el pop-up
-abrirPopup.addEventListener('click', () => {
-    miPopup.style.display = 'flex';
-});
-
-// Cerrar el pop-up
-cerrarPopup.addEventListener('click', () => {
-    miPopup.style.display = 'none';
-});
-
-// Copiar texto al portapapeles
-copiarTextoBtn.addEventListener('click', () => {
-    // Crear un elemento temporal para seleccionar el texto
-    navigator.clipboard.writeText(textoACopiar.textContent).then(() => {
-        alert('Texto copiado al portapapeles');
-    }).catch(err => {
-        console.error('Error al copiar texto:', err);
+   <script>
+    // Mostrar el popup
+    document.getElementById('openPopup').addEventListener('click', function () {
+      document.getElementById('popup').style.display = 'block';
     });
-});
-    </script>
+
+    // Cerrar el popup
+    document.getElementById('closePopup').addEventListener('click', function () {
+      document.getElementById('popup').style.display = 'none';
+    });
+
+    // Función para copiar al portapapeles
+    function copyToClipboard(elementId) {
+      const textToCopy = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(textToCopy)
+        .then(() => alert('Copiado al portapapeles: ' + textToCopy))
+        .catch(err => alert('Error al copiar: ' + err));
+    }
+  </script>
 </body>
 </html>
